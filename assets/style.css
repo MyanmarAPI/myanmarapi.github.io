@@ -6,6 +6,13 @@ body{
     max-width: 860px;
 }
 
+.request-link {
+    padding: 8px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    color: #707070;
+}
+
 /* Request parameter */
 .params, .params table{
     width: 100%;
@@ -27,6 +34,7 @@ body{
 
 .params .param-value {
     width: 20%;
+    font-weight: bold;
 }
 
 .params .param-attr {
