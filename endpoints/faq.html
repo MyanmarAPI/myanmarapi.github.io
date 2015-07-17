@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Thet Paing" />
+    <meta name="description" content="Documentation site for maepaysho" />
+    <meta name="keyword" content="election, mae, documentation, api, myanmar" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <title>Myanmar API Documentation</title>
+</head>
+<body>
+    
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              
+                <span class="mdl-layout-title">Maepyasoh Endpoint Documentations</span>
+              
+                <div class="mdl-layout-spacer"></div>
+              
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="http://myanmarapi.github.io/">Home</a>
+                    <a class="mdl-navigation__link" target="blank" href="http://maepaysoh.org">Website</a>
+                </nav>
+            </div>
+        </header>
+      
+        <main class="mdl-layout__content">
+            
+            <div class="page-container">
+
+                <div class="mdl-grid max-860">
+                    
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        <h3>Faq Endpoint</h3>
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--green-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET All FAQ</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get All Faq
+                            </p>
+
+                            <div class="request-link">
+                                http://api.maepaysho.org/faq/v1/?api_key=yourkey
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-single-apikey">
+                                                    api_key
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    type
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                yes_no <br>
+                                                open_ended
+                                            </td>
+                                            <td class="param-desc">Get Faq Filter By Type</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    section
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                Section
+                                            </td>
+                                            <td class="param-desc">Get Faq Filter By Section</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    per_page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                15
+                                            </td>
+                                            <td class="param-desc">Get Faqs per request</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                2
+                                            </td>
+                                            <td class="param-desc">Get Faqs Paginate</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": [
+
+        {
+            "id": "558d472e81b87dab228b4567",
+            "question": "Et officiis qui provident similique.",
+            "answer": "Culpa aut blanditiis accusamus veniam recusandae voluptatem. Quam itaque numquam debitis laudantium numquam in sint. Dicta et deserunt et ea maiores autem quis. Eum minus laudantium odit harum.",
+            "type": "open_ended",
+            "basis": "Magni aut id nisi consequatur totam consequatur.",
+            "sections": [
+                "Impedit ex quia sit delectus.",
+                "Dignissimos aspernatur impedit accusantium excepturi dicta rerum.",
+                "Voluptas vero omnis expedita."
+            ],
+            "url": "http://www.Donnelly.org/sed-ipsum-sed-temporibus-suscipit"
+        },
+        ...
+    ]
+    "meta": {
+
+        "pagination": {
+            "total": 30,
+            "count": 15,
+            "per_page": 15,
+            "current_page": 1,
+            "total_pages": 2,
+            "links": {
+                "next": "/?page=2"
+            }
+        }
+
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--deep-orange-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET Faq By Id</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get single Faq data by using id.
+                            </p>
+                            
+
+                            <div class="request-link">
+                                http://api.maepaysho.org/candidate/v1/questin?api_key=yourkey&id=558d472e81b87dab228b4567
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    api_key
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    id
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                558d472e81b87dab228b4567
+                                            </td>
+                                            <td class="param-desc">Id of Faq</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">404</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": [
+
+        {
+            "id": "558d472e81b87dab228b4567",
+            "question": "Et officiis qui provident similique.",
+            "answer": "Culpa aut blanditiis accusamus veniam recusandae voluptatem. Quam itaque numquam debitis laudantium numquam in sint. Dicta et deserunt et ea maiores autem quis. Eum minus laudantium odit harum.",
+            "type": "open_ended",
+            "basis": "Magni aut id nisi consequatur totam consequatur.",
+            "sections": [
+                "Impedit ex quia sit delectus.",
+                "Dignissimos aspernatur impedit accusantium excepturi dicta rerum.",
+                "Voluptas vero omnis expedita."
+            ],
+            "url": "http://www.Donnelly.org/sed-ipsum-sed-temporibus-suscipit"
+        }
+    ]
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Resource not found!",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--deep-orange-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">Search Faq By Keyword</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Search Faq data by using Keyword.
+                            </p>
+                            
+
+                            <div class="request-link">
+                                http://api.maepaysho.org/candidate/v1/search?api_key=yourkey&q=keyword
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    api_key
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    q
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                keyword
+                                            </td>
+                                            <td class="param-desc">Keyword of Faq Question</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    per_page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                15
+                                            </td>
+                                            <td class="param-desc">Get Faqs per request</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                2
+                                            </td>
+                                            <td class="param-desc">Get Faqs Paginate</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": [
+
+        {
+            "id": "558d472e81b87dab228b4567",
+            "question": "Et officiis qui provident similique.",
+            "answer": "Culpa aut blanditiis accusamus veniam recusandae voluptatem. Quam itaque numquam debitis laudantium numquam in sint. Dicta et deserunt et ea maiores autem quis. Eum minus laudantium odit harum.",
+            "type": "open_ended",
+            "basis": "Magni aut id nisi consequatur totam consequatur.",
+            "sections": [
+                "Impedit ex quia sit delectus.",
+                "Dignissimos aspernatur impedit accusantium excepturi dicta rerum.",
+                "Voluptas vero omnis expedita."
+            ],
+            "url": "http://www.Donnelly.org/sed-ipsum-sed-temporibus-suscipit"
+        }
+    ],
+    "meta": {
+
+        "pagination": {
+            "total": 4,
+            "count": 1,
+            "per_page": 1,
+            "current_page": 1,
+            "total_pages": 4,
+            "links": {
+                "next": "/?page=2"
+            }
+        }
+
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error Message!",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                </div> <!-- end of mdl-grid -->
+
+            </div> <!-- end of page-container -->
+
+        </main> <!-- end of mdl-layout__content -->
+
+    </div>
+
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+
+</body>
+</html>
