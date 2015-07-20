@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Yan Naing" />
+    <meta name="description" content="Documentation site for maepaysho" />
+    <meta name="keyword" content="election, mae, documentation, api, myanmar" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <title>Myanmar API Documentation</title>
+</head>
+<body>
+    
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              
+                <span class="mdl-layout-title">Maepyasoh Endpoint Documentations</span>
+              
+                <div class="mdl-layout-spacer"></div>
+              
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="http://myanmarapi.github.io/">Home</a>
+                    <a class="mdl-navigation__link" target="blank" href="http://maepaysoh.org">Website</a>
+                </nav>
+            </div>
+        </header>
+      
+        <main class="mdl-layout__content">
+            
+            <div class="page-container">
+
+                <div class="mdl-grid max-860">
+                    
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        <h3>Candidate Endpoint</h3>
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--blue-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET single candidate</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get single candidate data by using id.
+                            </p>
+
+                            <div class="request-link">
+                                http://api.maepaysho.org/candidate/v1/?api_key=yourkey&_with=party
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    _with
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                party
+                                            </td>
+                                            <td class="param-desc">Include party data in one request</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-single-apikey">
+                                                    api_key
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    "data" : {
+        "id": "54ed6efe54aa6458548b46f8",
+        "name": "အ​မည်",
+        "gender": "female",
+        "legislature": "Pyithu Hluttaw",
+        "national_id": "07/oyk(N)885197",
+        "birthdate": 1313154464,
+        "education": [
+            "B.A (English)",
+            "MBA (UK)"
+        ],
+        "occupation": [
+            "MD at Some Company",
+            "Another occupation"
+        ],
+        "nationality_religion": "Buddhism",
+        "residency": {
+            "type": "ward / village track",
+            "name": "ward / village track name",
+            "count": 460
+        },
+        "constituency": {
+            "type": "district / regional / state",
+            "name": "ရန်ကုန်တိုင်း​ ဒေသကြီး မဲဆန္ဒနယ် အမှတ် ၂",
+            "count": 1000
+        },
+        "party_id": "55a650ad5bf730c1348b4567",
+        "mother": {
+            "name": "အမိအမည်",
+            "religion": "Hindu"
+        },
+        "father": {
+            "name": "အဖအမည်",
+            "religion": "Hindu"
+        },
+        "party": {
+            "data": {
+                "name": "မြိုတိုင်းရင်းသားဖွံ့ဖြိုး​ရေးပါတီ",
+                "name_eng": "Mro National Development Party",
+                "members": 20,
+                "leader": [
+                    "ဦးစံသာအောင",
+                    "ဦးလာဘွေ"
+                ],
+                "chairman": [
+                    "ဥက္ကဌ ၁"
+                ],
+                "founded": {
+                    "founded": 1270771200,
+                    "approved": 1272412800
+                },
+                "register": {
+                    "register": 1272412800,
+                    "approved": 1270771200
+                },
+                "number": "2",
+                "contact": [
+                    "0912345678",
+                    "01123456"
+                ],
+                "address": "အမှတ်(၂၀၂)၊စာတိုက်လမ်း၊ပြည်တော်သာ ရပ်ကွက်၊ ကျောက်တော်မြို့နယ်၊ရခိုင်ပြည်နယ",
+                "region": "ရခိုင်ပြည်နယ်နှင့် ချင်းပြည်နယ် ပလက်ဝမြို့။",
+                files: {
+                    flat: "http://example.com/path/to/flat.jpg",
+                    seal: "http://example.com/path/to/seal.jpg",
+                    policy: "http://example.com/path/to/posicy.pdf"
+                }
+            }
+        }
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--deep-orange-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET candidate list</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            Get single candidate data by using id.
+
+                            <div class="request-link">
+                                http://api.maepaysho.org/candidate/v1/list?api_key=yourkey&_with=party
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-list-pname">
+                                                    _with
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                party
+                                            </td>
+                                            <td class="param-desc">Include party data in one request</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    api_key
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-perpage">
+                                                    per_page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-perpage">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                15
+                                            </td>
+                                            <td class="param-desc">Item per request</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-list-gender">
+                                                    gender
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-gender">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                male <br>
+                                                female
+                                            </td>
+                                            <td class="param-desc">Get list of items filtered by gender</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-list-religion">
+                                                    religion
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-religion">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                buddhism <br>
+                                                christian <br>
+                                                islam <br>
+                                                hindu
+                                            </td>
+                                            <td class="param-desc">Get list of items filtered by religion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-list-party">
+                                                    party
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-party">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                55a650ad5bf730c1348b457d
+                                            </td>
+                                            <td class="param-desc">Get list of items filtered by party id</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    "data" : [
+        {
+            "id": "54ed6efe54aa6458548b46f8",
+            "name": "အ​မည်",
+            "gender": "male",
+            "legislature": "Pyithu Hluttaw",
+            "national_id": "07/oyk(N)885197",
+            "birthdate": 1313154464,
+            "education": [
+                "B.A (English)",
+                "MBA (UK)"
+            ],
+            "occupation": [
+                "MD at Some Company",
+                "Another occupation"
+            ],
+            "nationality_religion": "Buddhism",
+            "residency": {
+                "type": "ward / village track",
+                "name": "ward / village track name",
+                "count": 460
+            },
+            "constituency": {
+                "type": "district / regional / state",
+                "name": "ရန်ကုန်တိုင်း​ ဒေသကြီး မဲဆန္ဒနယ် အမှတ် ၂",
+                "count": 1000
+            },
+            "party_id": "55a650ad5bf730c1348b4567",
+            "mother": {
+                "name": "အမိအမည်",
+                "religion": "Hindu"
+            },
+            "father": {
+                "name": "အဖအမည်",
+                "religion": "Hindu"
+            },
+            "party": {
+                "data": {
+                    "name": "မြိုတိုင်းရင်းသားဖွံ့ဖြိုး​ရေးပါတီ",
+                    "name_eng": "Mro National Development Party",
+                    "members": 20,
+                    "leader": [
+                        "ဦးစံသာအောင",
+                        "ဦးလာဘွေ"
+                    ],
+                    "chairman": [
+                        "ဥက္ကဌ ၁"
+                    ],
+                    "founded": {
+                        "founded": 1270771200,
+                        "approved": 1272412800
+                    },
+                    "register": {
+                        "register": 1272412800,
+                        "approved": 1270771200
+                    },
+                    "number": "2",
+                    "contact": [
+                        "0912345678",
+                        "01123456"
+                    ],
+                    "address": "အမှတ်(၂၀၂)၊စာတိုက်လမ်း၊ပြည်တော်သာ ရပ်ကွက်၊ ကျောက်တော်မြို့နယ်၊ရခိုင်ပြည်နယ",
+                    "region": "ရခိုင်ပြည်နယ်နှင့် ချင်းပြည်နယ် ပလက်ဝမြို့။",
+                    files: {
+                        flat: "http://example.com/path/to/flat.jpg",
+                        seal: "http://example.com/path/to/seal.jpg",
+                        policy: "http://example.com/path/to/posicy.pdf"
+                    }
+                }
+            }
+        },
+        {
+            ...
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "total": 20,
+            "count": 15,
+            "per_page": 15,
+            "current_page": 1,
+            "total_pages": 2,
+            "links": {
+                next: "http://example.com/link/to?page=2"
+            }
+        }
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                </div> <!-- end of mdl-grid -->
+
+            </div> <!-- end of page-container -->
+
+        </main> <!-- end of mdl-layout__content -->
+
+    </div>
+
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+
+</body>
+</html>

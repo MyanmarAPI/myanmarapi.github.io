@@ -1,0 +1,42 @@
+body{
+    background: #F5F5F5;
+}
+
+.max-860 {
+    max-width: 860px;
+}
+
+.request-link {
+    padding: 8px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    color: #707070;
+}
+
+/* Request parameter */
+.params, .params table{
+    width: 100%;
+}
+
+.params td {
+    padding: 15px;
+    vertical-align: text-top;
+}
+
+.params .param-name {
+    width: 15%;
+    font-weight: bold;
+}
+
+.params .param-desc {
+    width: 40%;
+}
+
+.params .param-value {
+    width: 20%;
+    font-weight: bold;
+}
+
+.params .param-attr {
+    width: 20%;
+}
