@@ -43,10 +43,131 @@
                 <div class="mdl-grid max-860">
                     
                     <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
-                        <h3>Candidate Endpoint</h3>
+                        <h3>Party Endpoint</h3>
                     </div>
 
-                    <h1>Coming Soon ...</h1>
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--blue-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET list of party</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get list of  all party data including it's detail. 
+                            </p>
+
+                            <div class="request-link">
+                                http://api.maepaysho.org/party?api_key=yourkey
+                            </div> <!-- end of request-link -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    _meta: {
+        status: "ok",
+        count: 76,
+        api_version: 1,
+        unicode: true,
+        format: "unicode"
+    },
+    data: [
+            {
+                PartyName: "မြိုတိုင်းရင်းသားဖွံ့ဖြိုး​ရေးပါတီ",
+                PartyNameEnglish: "Mro National Development Party(MNDP)",
+                EstablishmentDate: "ပုဒ်မ ၂၅ အရ လျှောက်ထားခြင်း",
+                MemberCount: "ပုဒ်မ ၂၅ အရ လျှောက်ထားခြင်း",
+                Leadership: "ဦးစံသာအောင်၊ ဦးလာဘွေ",
+                EstablishmentApprovalDate: "-",
+                RegistrationApplicationDate: "၉.၄.၂၀၁၀",
+                RegistrationApprovalDate: "၂၈.၄.၂၀၁၀",
+                ApprovedPartyNumber: "အမှတ်စဉ်( ၁ )",
+                PartyFlag: "https://storage.googleapis.com/staticassets/political/1-flag.jpg",
+                PartySeal: "https://storage.googleapis.com/staticassets/political/1-logo.png",
+                Chairman: "ဦးစံသာအောင်၊ ဦးလာဘွေ",
+                Region: "ရခိုင်ပြည်နယ်နှင့် ချင်းပြည်နယ် ပလက်ဝမြို့။",
+                Headquarters: "အမှတ်(၂၀၂)၊စာတိုက်လမ်း၊ပြည်တော်သာ ရပ်ကွက်၊ ကျောက်တော်မြို့နယ်၊ရခိုင်ပြည်နယ်",
+                Contact: "၀၉-၄၂၁၇၃၄၅၀၈(ဥက္ကဌ)",
+                Policy: "http://uecmyanmar.org/images/stories/policals_policies/1%20Mro%20or%20Khami%20National%20Solidarity%20Organization.pdf"
+            },
+            {
+                PartyName: "တိုင်းရင်းသားစည်းလုံးညီညွတ်ရေးပါတီ",
+                PartyNameEnglish: "National Unity Party",
+                EstablishmentDate: "ပုဒ်မ ၂၅ အရ လျှောက်ထားခြင်း",
+                MemberCount: "ပုဒ်မ ၂၅ အရ လျှောက်ထားခြင်း",
+                Leadership: "ဦးထွန်းရီ၊ ဦးသန်းတင်",
+                EstablishmentApprovalDate: "-",
+                RegistrationApplicationDate: "၂၉.၃.၂၀၁၀",
+                RegistrationApprovalDate: "၂၉.၄.၂၀၁၀",
+                ApprovedPartyNumber: "အမှတ်စဉ်( ၂ )",
+                PartyFlag: "https://storage.googleapis.com/staticassets/political/2-flag.png",
+                PartySeal: "https://storage.googleapis.com/staticassets/political/2-logo.jpg",
+                Chairman: "ဦးထွန်းရီ၊ ဦးသန်းတင်(ထွေ/မှူး)",
+                Region: "ပြည်ထောင်စုတစ်ဝန်းလုံး",
+                Headquarters: "အမှတ် (၂၄)၊ အောင်ဇေယျလမ်း၊ ရွှေတောင်ကြား(၁)ရပ်ကွက်၊ ဗဟန်းမြို့နယ်၊ ရန်ကုန်တိုင်းဒေသကြီး",
+                Contact: "၀၉-၄၂၁၁၀၉၅၅၀၊ ၀၁-၅၃၇၆၀၁၊ ၀၁-၅၅၇၄၈၀၊ ၀၁-၅၅၄၂၁၉(ဖက်စ်)",
+                Policy: "http://uecmyanmar.org/images/stories/policals_policies/2/2.1.pdf"
+            },
+            {
+                PartyName: "လားဟူအမျိုးသားဖွံ့ဖြိုးတိုးတက်ရေးပါတီ",
+                PartyNameEnglish: "La Hu National Development Party",
+                EstablishmentDate: "ပုဒ်မ ၂၅ အရ လျှောက်ထားခြင်း",
+                MemberCount: "ပုဒ်မ ၂၅ အရ လျှောက်ထားခြင်း",
+                Leadership: "ဦးကျဟားရှဲ၊ ဦးယောသပ်",
+                EstablishmentApprovalDate: "ပုဒ်မ ၂၅ အရ လျှောက်ထားခြင်း",
+                RegistrationApplicationDate: "၂၃.၄.၂၀၁၀",
+                RegistrationApprovalDate: "၂၉.၄.၂၀၁၀",
+                ApprovedPartyNumber: "အမှတ်စဉ်( ၃ )",
+                PartyFlag: "https://storage.googleapis.com/staticassets/political/3-flag.jpg",
+                PartySeal: "https://storage.googleapis.com/staticassets/political/3-logo.jpg",
+                Chairman: "ဦးယောသပ်၊ ဦးသက်ဝင်း(ထွေ/မှူး)",
+                Region: "ရှမ်းပြည်နယ်အတွင်း",
+                Headquarters: "အမှတ်(၄၃)၊ လမ်းသွယ်(၄)၊ ပါရမီလမ်း၊ ရပ်ကွက်(၁)၊ လားရှိုးမြို့၊ ရှမ်းပြည်နယ်။",
+                Contact: "၀၉-၄၉၂၁၉၆၇၂(ဦးယောသပ်)၊  ၀၈၂-၂၂၇၁၃၊ ၀၈၂-၂၃၁၀၆",
+                Policy: "http://uecmyanmar.org/images/stories/policals_policies/3La%20Hu%20National%20Development%20Party.pdf"
+            },
+            ...
+    ]
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+                        </div>
+                    </div>
 
                 </div> <!-- end of mdl-grid -->
 
