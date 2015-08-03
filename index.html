@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
     <link rel="stylesheet" href="assets/style.css">
 
     <title>Myanmar API Documentation</title>
@@ -29,7 +30,8 @@
                 <div class="mdl-layout-spacer"></div>
               
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="http://myanmarapi.github.io/">Home</a>
+                    <a class="mdl-navigation__link" href="index.html">Home</a>
+                    <a class="mdl-navigation__link" href="endpoints.html">Endpoints</a>
                     <a class="mdl-navigation__link" target="blank" href="http://maepaysoh.org">Website</a>
                 </nav>
             </div>
@@ -41,90 +43,85 @@
 
                 <div class="mdl-grid max-860">
                     
-                    <!-- Candidate Endpoint -->
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
-                        
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Candidate Endpoint</h2>
+                   <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                       <h3>WELCOME !!!</h3>
+                   </div>
+
+                   <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        <div class="mdl-card__title mdl-color--blue-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">Get your API key</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Please sign up and create application at <a href="http://maepaysoh.org">http://maepaysoh.org</a>
+                            </p>
+                            <a href="http://maepaysoh.org/dashboard/applications/create" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                              Create Application Now
+                            </a>
+                        </div>
+                   </div>
+
+                   <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        <div class="mdl-card__title mdl-color--blue-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">Unique User tracking</h2>
                         </div>
 
                         <div class="mdl-card__supporting-text">
-                            Candidate endpoints has data of candidates for coming 2015 election. This endpoint is connected with party and constituency.
-                        </div>
 
-                        <div class="mdl-card__actions mdl-card--border">
+                            <p>For unique user tracking, please follow these steps to request the API.</p>
+
+                            <p><strong>Generate Token for each user</strong></p>
+
+                            <p>Send POST request to</p>
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/token/generate
+                            </div> <!-- end of request-link -->
+
+                            <p>With Your api_key</p>
+
+                            <pre>
+                                <code class="language-javascript">
+{
+    api_key : 'your-api-key'
+}
+                                </code>    
+                            </pre>
+
+                            <p>You will get a response like this</p>
                             
-                            <a href="endpoints/candidate.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                View Documentation
-                            </a>
+                            <pre>
+                                <code class="language-javascript">
+{
+    "_meta": {
+        "status": "ok",
+        "count": 1,
+        "api_version": 1
+    },
+    "data": {
+        "token": "user-token-key"
+    }
+}
+                                </code>
+                            </pre>
+
+                            <p><strong>Request data with user token</strong></p>
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/{endpoint}/{resourse}?token=user-token-key
+                            </div>
+
+                            <p>Get Data with Zawgyi Font</p>
+                            
+                            <div class="request-link">
+                                http://api.maepaysoh.org/{endpoint}/{resourse}?font=zawgyi&token=user-token-key
+                            </div>
 
                         </div>
 
                     </div>
 
-                    <!-- Party Endpoint -->
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
-                        
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Party Endpoint</h2>
-                        </div>
-
-                        <div class="mdl-card__supporting-text">
-                            Party endpoint is provided list of party that UEC Myanmar publish on their website here. All data get from the website and provided through API.
-                        </div>
-
-                        <div class="mdl-card__actions mdl-card--border">
-                            
-                            <a href="endpoints/party.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                View Documentation
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <!-- FAQ Endpoint -->
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
-                        
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">FAQ Endpoint</h2>
-                        </div>
-
-                        <div class="mdl-card__supporting-text">
-                            Frequently answer and question endpoint will provide common question and it's answer from voters that compiled by our partner Community Oriented Myanmar (COM). 
-                        </div>
-
-                        <div class="mdl-card__actions mdl-card--border">
-                            
-                            <a href="endpoints/faq.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                View Documentation
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Geolocation Endpoint -->
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
-                        
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Geolocation Endpoint</h2>
-                        </div>
-
-                        <div class="mdl-card__supporting-text">
-                            You can have geolocation of Myanmar by using this endpoint. For now geolocation endpoint is provided district location of Myanmar.
-                        </div>
-
-                        <div class="mdl-card__actions mdl-card--border">
-                            
-                            <a href="endpoints/geolocation.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                View Documentation
-                            </a>
-
-                        </div>
-
-                    </div>
-
+                    
                 </div> <!-- end of mdl-grid -->
 
             </div> <!-- end of page-container -->
@@ -134,6 +131,6 @@
     </div>
 
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
 </body>
 </html>
