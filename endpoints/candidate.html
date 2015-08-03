@@ -25,7 +25,7 @@
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
               
-                <span class="mdl-layout-title">Maepaysoh Endpoint Documentations</span>
+                <span class="mdl-layout-title">Maepyasoh Endpoint Documentations</span>
               
                 <div class="mdl-layout-spacer"></div>
               
@@ -58,7 +58,7 @@
                             </p>
 
                             <div class="request-link">
-                                http://api.maepaysho.org/candidate/v1/?api_key=yourkey&_with=party
+                                http://api.maepaysoh.org/candidate/?token=user-token-key&_with=party
                             </div> <!-- end of request-link -->
 
                             <div class="params">
@@ -83,7 +83,7 @@
                                         <tr>
                                             <td class="param-name mdl-typography--text-right">
                                                 <span class="mdl-color-text--deep-orange-500" id="cand-single-apikey">
-                                                    api_key
+                                                    token
                                                 </span>
                                                 <div class="mdl-tooltip" for="cand-single-apikey">
                                                     required
@@ -92,7 +92,22 @@
                                             <td class="param-value">
                                                 lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
                                             </td>
-                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-desc">User token key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-font">
+                                                    font
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-font">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                zawgyi
+                                            </td>
+                                            <td class="param-desc">Expected font (zawgyi or unicode)</td>
                                             <td class="param-attr">String</td>
                                         </tr>
                                     </tbody>
@@ -226,7 +241,7 @@
                             Get single candidate data by using id.
 
                             <div class="request-link">
-                                http://api.maepaysho.org/candidate/v1/list?api_key=yourkey&_with=party
+                                http://api.maepaysoh.org/candidate/list?token=user-token-key&_with=party
                             </div> <!-- end of request-link -->
 
                             <div class="params">
@@ -251,7 +266,7 @@
                                         <tr>
                                             <td class="param-name mdl-typography--text-right">
                                                 <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
-                                                    api_key
+                                                    token
                                                 </span>
                                                 <div class="mdl-tooltip" for="cand-list-apikey">
                                                     required
@@ -260,8 +275,27 @@
                                             <td class="param-value">
                                                 lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
                                             </td>
-                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-desc">User token key of your applicaion</td>
                                             <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-font">
+                                                    font
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-font">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td>
+                                                zawgyi
+                                            </td>
+                                            <td>
+                                                Expected font (zawgyi or unicode)
+                                            </td>
+                                            <td>
+                                                string
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="param-name mdl-typography--text-right">
