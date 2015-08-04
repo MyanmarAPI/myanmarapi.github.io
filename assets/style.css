@@ -40,3 +40,12 @@ body{
 .params .param-attr {
     width: 20%;
 }
+
+.additional
+{
+    margin-top: 10px;
+}
+.additional p
+{
+    color: #707070;
+}
