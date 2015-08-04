@@ -60,7 +60,7 @@
                             </p>
 
                             <div class="request-link">
-                                http://api.maepaysho.org/geo/v1/district?token=user-token-key
+                                http://api.maepaysho.org/geo/district?token=user-token-key
                             </div> <!-- end of request-link -->
 
                             <div class="params">
@@ -85,7 +85,7 @@
                                         <tr>
                                             <td class="param-name mdl-typography--text-right">
                                                 <span class="mdl-color-text--blue-500" id="cand-single-pname">
-                                                    name
+                                                    st_name
                                                 </span>
                                                 <div class="mdl-tooltip" for="cand-single-pname">
                                                     optional
@@ -94,7 +94,22 @@
                                             <td class="param-value">
                                                Ayeyarwady
                                             </td>
-                                            <td class="param-desc">Get District Location By Name</td>
+                                            <td class="param-desc">Get District Location By State Name</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    dt_name
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                               Hinthada
+                                            </td>
+                                            <td class="param-desc">Get District Location By District Name</td>
                                             <td class="param-attr">String</td>
                                         </tr>
                                         <tr>
@@ -111,6 +126,36 @@
                                             </td>
                                             <td class="param-desc">Get District Location By Id</td>
                                             <td class="param-attr">Int</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    st_pcode
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                MMR017
+                                            </td>
+                                            <td class="param-desc">Get District Location By State PCODE</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    dt_pcode
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                MMR017D002
+                                            </td>
+                                            <td class="param-desc">Get District Location By District PCODE</td>
+                                            <td class="param-attr">String</td>
                                         </tr>
                                         <tr>
                                             <td class="param-name mdl-typography--text-right">
@@ -255,7 +300,7 @@
                             
 
                             <div class="request-link">
-                                http://api.maepaysho.org/geo/v1/district/find?token=user-token-key&long=96.253221147838&lat=26.1248220476
+                                http://api.maepaysho.org/geo/district/find?token=user-token-key&long=96.253221147838&lat=26.1248220476
                             </div> <!-- end of request-link -->
 
                             <div class="params">
