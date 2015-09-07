@@ -8,7 +8,7 @@
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="author" content="Thet Paing" />
-    <meta name="description" content="Documentation site for maepaysho" />
+    <meta name="description" content="Documentation site for maepaysoh" />
     <meta name="keyword" content="election, mae, documentation, api, myanmar" />
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
@@ -60,7 +60,7 @@
                             </p>
 
                             <div class="request-link">
-                                http://api.maepaysho.org/geo/district?token=user-token-key&no_geo=true
+                                http://api.maepaysoh.org/geo/district?token=user-token-key&no_geo=true
                             </div> <!-- end of request-link -->
 
                             <div class="params">
@@ -181,7 +181,7 @@
 
                             </div> <!-- end of params -->
 
-                            <p>Get Location By OBJECTID</p>
+                            <p>Get Location By OBJECTID [ OBJECTID of Geo Json ]</p>
 
                             <div class="params">
                                 
@@ -356,7 +356,7 @@
                             
 
                             <div class="request-link">
-                                http://api.maepaysho.org/geo/district/find?token=user-token-key&lon=96.253221147838&lat=26.1248220476
+                                http://api.maepaysoh.org/geo/district/find?token=user-token-key&lon=96.253221147838&lat=26.1248220476
                             </div> <!-- end of request-link -->
 
                             <div class="params">
@@ -479,6 +479,125 @@
 {
     "error": {
         "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--blue-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET Single District Location Mongo Id</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get Single District Location By Mongo Id.
+                            </p>
+                            
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/geo/district/55c05ef2fcaabbe47d14cd83?token=user-token-key
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    token
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">404</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": {
+        "id": "55a64c0eab5d4d297a0e9ccc",
+        "type": "Feature",
+        "properties": {
+            "OBJECTID": 1,
+            "ST": "Ayeyarwady",
+            "ST_PCODE": "MMR017",
+            "DT": "Hinthada",
+            "DT_PCODE": "MMR017D002",
+            "Shape_Leng": 4.94490045094,
+            "Shape_Area": 0.597080590429,
+            "DT_Mya": "?????????????"
+        },"geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        95.126367502558,
+                        18.505117378065
+                    ],
+                    [
+                        95.129693702702,
+                        18.503786106244
+                    ],
+                    [
+                        95.130174348068,
+                        18.50288589207
+                    ],
+                    ...
+                ]
+            ]
+        }
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-missing" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Resource not found!",
     }
 }
 
