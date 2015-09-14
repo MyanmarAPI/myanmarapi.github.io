@@ -61,6 +61,44 @@
                             <div class="request-link">
                                 http://api.maepaysoh.org/party?token=user-token-key
                             </div> <!-- end of request-link -->
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-single-apikey">
+                                                    per_page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-apikey">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                20
+                                            </td>
+                                            <td class="param-desc">Number of record to return</td>
+                                            <td class="param-attr">Integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-font">
+                                                    page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-font">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                1
+                                            </td>
+                                            <td class="param-desc">Page number</td>
+                                            <td class="param-attr">Integer</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
 
                             <div class="response">
                                 
@@ -83,7 +121,9 @@
         count: 76,
         api_version: 1,
         unicode: true,
-        format: "unicode"
+        format: "unicode",
+        page:1,
+        per_page:20
     },
     data: [
             {
@@ -206,7 +246,9 @@
         "count": 1,
         "api_version": 1,
         "unicode": true,
-        "format": "unicode"
+        "format": "unicode",
+        "per_page":1,
+        "page":1
     },
     "data": {
         "_id": "55d453165bf73049038b4576",
