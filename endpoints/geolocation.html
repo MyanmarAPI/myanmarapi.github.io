@@ -11,6 +11,8 @@
     <meta name="description" content="Documentation site for maepaysoh" />
     <meta name="keyword" content="election, mae, documentation, api, myanmar" />
 
+    <link href="../assets/favicon.png" rel="icon" type="image/png">
+
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -45,7 +47,6 @@
                     
                     <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
                         <h3>Geo Endpoint</h3>
-                        <p>[ For Now District Location Available ]</p>
                     </div>
 
                     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
@@ -408,6 +409,21 @@
                                             <td class="param-desc">Latitude of Location</td>
                                             <td class="param-attr">Float</td>
                                         </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    no_geo
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                true
+                                            </td>
+                                            <td class="param-desc">Get District Location without geometry</td>
+                                            <td class="param-attr">string</td>
+                                        </tr>
                                     </tbody>
                                 </table>
 
@@ -530,6 +546,21 @@
                                             <td class="param-desc">Api key of your applicaion</td>
                                             <td class="param-attr">String</td>
                                         </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    no_geo
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                true
+                                            </td>
+                                            <td class="param-desc">Get District Location without geometry</td>
+                                            <td class="param-attr">string</td>
+                                        </tr>
                                     </tbody>
                                 </table>
 
@@ -563,6 +594,1283 @@
             "Shape_Leng": 4.94490045094,
             "Shape_Area": 0.597080590429,
             "DT_Mya": "?????????????"
+        },"geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        95.126367502558,
+                        18.505117378065
+                    ],
+                    [
+                        95.129693702702,
+                        18.503786106244
+                    ],
+                    [
+                        95.130174348068,
+                        18.50288589207
+                    ],
+                    ...
+                ]
+            ]
+        }
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Resource not found!",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--green-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET All Upper House Location</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get All Upper House  Location
+                            </p>
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/geo/upperhouse?token=user-token-key&no_geo=true
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-single-apikey">
+                                                    token
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    no_geo
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                true
+                                            </td>
+                                            <td class="param-desc">Get Upper House Location without geometry</td>
+                                            <td class="param-attr">string</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    per_page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                15
+                                            </td>
+                                            <td class="param-desc">Get Upper House Location per request</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                2
+                                            </td>
+                                            <td class="param-desc">Get Upper House Location Paginate</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+                            <div class="additional">
+                                <p>
+                                    Additional Params
+                                </p>
+
+                            </div>
+
+                            <p>
+                                Get Upper House Location By Region
+                            </p>
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    st_name
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                               Ayeyarwady
+                                            </td>
+                                            <td class="param-desc">Get Upper House Location By State Name</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <p>Get Location By PCODE</p>
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    st_pcode
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                MMR017
+                                            </td>
+                                            <td class="param-desc">Get Upper House Location By State PCODE</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": [
+
+        {
+            "id": "55a64c0eab5d4d297a0e9ccc",
+            "type": "Feature",
+            "properties": {
+                "ST": "Ayeyarwady",
+                "ST_PCODE": "MMR017",
+                "Label2": "Ayeyarwady-1",
+                "PCode": "MMR017HLA001\r\nHLA001"
+            },"geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            95.126367502558,
+                            18.505117378065
+                        ],
+                        [
+                            95.129693702702,
+                            18.503786106244
+                        ],
+                        [
+                            95.130174348068,
+                            18.50288589207
+                        ],
+                        ...
+                    ]
+                ]
+            }
+        }
+        ...
+    ],
+    "meta": {
+        "pagination": {
+            "total": 72,
+            "count": 15,
+            "per_page": 15,
+            "current_page": 1,
+            "total_pages": 5,
+            "links": {
+                "next": "/?page=2"
+            }
+        }
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--deep-orange-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET Upper House Location By Longitude and Latitude</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get Upper House Location By Longitude and Latitude.
+                            </p>
+                            
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/geo/upperhouse/find?token=user-token-key&lon=96.253221147838&lat=26.1248220476
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    token
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    lon
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                96.253221147838
+                                            </td>
+                                            <td class="param-desc">Longitude of Location</td>
+                                            <td class="param-attr">Float</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    lat
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                26.1248220476
+                                            </td>
+                                            <td class="param-desc">Latitude of Location</td>
+                                            <td class="param-attr">Float</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    no_geo
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                true
+                                            </td>
+                                            <td class="param-desc">Get Upper House Location without geometry</td>
+                                            <td class="param-attr">string</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": [
+
+        {
+            "id": "55a64c0eab5d4d297a0e9ccc",
+            "type": "Feature",
+            "properties": {
+                    "ST": "Ayeyarwady",
+                    "ST_PCODE": "MMR017",
+                    "Label2": "Ayeyarwady-1",
+                    "PCode": "MMR017HLA001\r\nHLA001"
+            },"geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            95.126367502558,
+                            18.505117378065
+                        ],
+                        [
+                            95.129693702702,
+                            18.503786106244
+                        ],
+                        [
+                            95.130174348068,
+                            18.50288589207
+                        ],
+                        ...
+                    ]
+                ]
+            }
+        }
+    ]
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--blue-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET Single Upper House Location Mongo Id</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get Single Upper House Location By Mongo Id.
+                            </p>
+                            
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/geo/upperhouse/55c05ef2fcaabbe47d14cd83?token=user-token-key
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    token
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    no_geo
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                true
+                                            </td>
+                                            <td class="param-desc">Get Upper House Location without geometry</td>
+                                            <td class="param-attr">string</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">404</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": {
+        "id": "55a64c0eab5d4d297a0e9ccc",
+        "type": "Feature",
+        "properties": {
+                "ST": "Ayeyarwady",
+                "ST_PCODE": "MMR017",
+                "Label2": "Ayeyarwady-1",
+                "PCode": "MMR017HLA001\r\nHLA001"
+        },"geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        95.126367502558,
+                        18.505117378065
+                    ],
+                    [
+                        95.129693702702,
+                        18.503786106244
+                    ],
+                    [
+                        95.130174348068,
+                        18.50288589207
+                    ],
+                    ...
+                ]
+            ]
+        }
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Resource not found!",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--green-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET All Lower House Location</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get All Lower House  Location
+                            </p>
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/geo/lowerhouse?token=user-token-key&no_geo=true
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-single-apikey">
+                                                    token
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    no_geo
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                true
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location without geometry</td>
+                                            <td class="param-attr">string</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    per_page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                15
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location per request</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    page
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                2
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location Paginate</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+                            <div class="additional">
+                                <p>
+                                    Additional Params
+                                </p>
+
+                            </div>
+
+                            <p>
+                                Get Lower House Location By Region
+                            </p>
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    st_name
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                               Ayeyarwady
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location By State Name</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    dt_name
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                               Labutta
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location By District Name</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    ts_name
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                               Mawlamyinegyun
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location By Township Name</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <p>Get Location By OBJECTID [ OBJECTID of Geo Json ]</p>
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    object_id
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                1
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location By OBJECTID</td>
+                                            <td class="param-attr">Int</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <p>Get Location By PCODE</p>
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    st_pcode
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                MMR017
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location By State PCODE</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    dt_pcode
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                MMR017D004
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location By District PCODE</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    ts_pcode
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                MMR017018
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location By Township PCODE</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <p>Get Location By Party</p>
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    by_party
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                NLD
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location By Party</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": [
+
+        {
+            "id": "55a64c0eab5d4d297a0e9ccc",
+            "type": "Feature",
+            "properties": {
+                "OBJECTID": 4,
+                "ST": "Ayeyarwady",
+                "ST_PCODE": "MMR017",
+                "DT": "Labutta",
+                "DT_PCODE": "MMR017D004",
+                "TS": "Mawlamyinegyun",
+                "TS_MYA": "armfvNrdKifuRef;",
+                "TS_PCODE": "MMR017018",
+                "ST_2": "Ayeyarwady Region",
+                "Area": 1217.7478853,
+                "Label2": "Mawlamyinegyun\n339083",
+                "Sr": 4,
+                "State": "Ayeyarwady",
+                "StateName": "Ayeyarwady Region",
+                "st_pcode_1": "MMR017",
+                "District": "Labutta",
+                "dt_pcode_1": "MMR017D004",
+                "Township": "Mawlamyinegyun",
+                "ts_pcode_1": "MMR017018",
+                "ZawGyiOne": "?????????????????",
+                "Myanmar3": "?????????????????",
+                "KPP": null,
+                "CPP": null,
+                "CNP": null,
+                "UDPKS": null,
+                "TPNP": null,
+                "NUP": null,
+                "PNO": null,
+                "PSDP": null,
+                "AMRDP": null,
+                "RNDP": null,
+                "SNDP": null,
+                "WDP": null,
+                "NDF": null,
+                "Inn": null,
+                "Danu": null,
+                "NNDP": null,
+                "USDP": "USDP",
+                "NLD": null,
+                "Summary": "USDP"
+            },"geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            95.126367502558,
+                            18.505117378065
+                        ],
+                        [
+                            95.129693702702,
+                            18.503786106244
+                        ],
+                        [
+                            95.130174348068,
+                            18.50288589207
+                        ],
+                        ...
+                    ]
+                ]
+            }
+        }
+        ...
+    ],
+    "meta": {
+        "pagination": {
+            "total": 72,
+            "count": 15,
+            "per_page": 15,
+            "current_page": 1,
+            "total_pages": 5,
+            "links": {
+                "next": "/?page=2"
+            }
+        }
+    }
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--deep-orange-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET Lower House Location By Longitude and Latitude</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get Lower House Location By Longitude and Latitude.
+                            </p>
+                            
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/geo/lowerhouse/find?token=user-token-key&lon=96.253221147838&lat=26.1248220476
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    token
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    lon
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                96.253221147838
+                                            </td>
+                                            <td class="param-desc">Longitude of Location</td>
+                                            <td class="param-attr">Float</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    lat
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                26.1248220476
+                                            </td>
+                                            <td class="param-desc">Latitude of Location</td>
+                                            <td class="param-attr">Float</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    no_geo
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                true
+                                            </td>
+                                            <td class="param-desc">Get District Location without geometry</td>
+                                            <td class="param-attr">string</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">500</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": [
+
+        {
+            "id": "55a64c0eab5d4d297a0e9ccc",
+            "type": "Feature",
+            "properties": {
+                "OBJECTID": 4,
+                "ST": "Ayeyarwady",
+                "ST_PCODE": "MMR017",
+                "DT": "Labutta",
+                "DT_PCODE": "MMR017D004",
+                "TS": "Mawlamyinegyun",
+                "TS_MYA": "armfvNrdKifuRef;",
+                "TS_PCODE": "MMR017018",
+                "ST_2": "Ayeyarwady Region",
+                "Area": 1217.7478853,
+                "Label2": "Mawlamyinegyun\n339083",
+                "Sr": 4,
+                "State": "Ayeyarwady",
+                "StateName": "Ayeyarwady Region",
+                "st_pcode_1": "MMR017",
+                "District": "Labutta",
+                "dt_pcode_1": "MMR017D004",
+                "Township": "Mawlamyinegyun",
+                "ts_pcode_1": "MMR017018",
+                "ZawGyiOne": "?????????????????",
+                "Myanmar3": "?????????????????",
+                "KPP": null,
+                "CPP": null,
+                "CNP": null,
+                "UDPKS": null,
+                "TPNP": null,
+                "NUP": null,
+                "PNO": null,
+                "PSDP": null,
+                "AMRDP": null,
+                "RNDP": null,
+                "SNDP": null,
+                "WDP": null,
+                "NDF": null,
+                "Inn": null,
+                "Danu": null,
+                "NNDP": null,
+                "USDP": "USDP",
+                "NLD": null,
+                "Summary": "USDP"
+            },"geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            95.126367502558,
+                            18.505117378065
+                        ],
+                        [
+                            95.129693702702,
+                            18.503786106244
+                        ],
+                        [
+                            95.130174348068,
+                            18.50288589207
+                        ],
+                        ...
+                    ]
+                ]
+            }
+        }
+    ]
+}
+                                            </code>
+                                        </pre>
+
+                                    </div>
+
+                                    <div id="response-error" class="mdl-tabs__panel">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+                                                
+{
+    "error": {
+        "message": "Error message text",
+    }
+}
+
+                                            </code> <!-- end of language-javascript -->
+                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- end of response -->
+
+                        </div>
+
+                    </div>
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                        
+                        <div class="mdl-card__title mdl-color--blue-500">
+                            <h2 class="mdl-card__title-text mdl-color-text--white">GET Single Lower House Location Mongo Id</h2>
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Get Single Lower House Location By Mongo Id.
+                            </p>
+                            
+
+                            <div class="request-link">
+                                http://api.maepaysoh.org/geo/lowerhouse/55c05ef2fcaabbe47d14cd83?token=user-token-key
+                            </div> <!-- end of request-link -->
+
+                            <div class="params">
+                                
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--deep-orange-500" id="cand-list-apikey">
+                                                    token
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-apikey">
+                                                    required
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                lmeiOxzUTQFOfIANfS3oFQ631YXqLqBt
+                                            </td>
+                                            <td class="param-desc">Api key of your applicaion</td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-single-pname">
+                                                    no_geo
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-single-pname">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                true
+                                            </td>
+                                            <td class="param-desc">Get Lower House Location without geometry</td>
+                                            <td class="param-attr">string</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end of params -->
+
+                            <div class="response">
+                                
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    
+                                    <div class="mdl-tabs__tab-bar">
+                                        
+                                        <a href="#response-ok" class="mdl-tabs__tab is-active">200</a>
+                                        <a href="#response-error" class="mdl-tabs__tab">404</a>
+
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="response-ok">
+                                        
+                                        <pre>
+                                            <code class="language-javascript">
+{
+    data": {
+        "id": "55a64c0eab5d4d297a0e9ccc",
+        "type": "Feature",
+        "properties": {
+            "OBJECTID": 6,
+            "ST": "Yangon",
+            "ST_PCODE": "MMR013",
+            "DT": "Yangon (East)",
+            "DT_PCODE": "MMR013D002",
+            "TS": "Pazundaung",
+            "TS_MYA": "ykZGefawmif",
+            "TS_PCODE": "MMR013016",
+            "ST_2": "Yangon Region",
+            "Area": 1.06807592674,
+            "Label2": "Pazundaung\n46672",
+            "Sr": 6,
+            "State": "Yangon",
+            "StateName": "Yangon Region",
+            "st_pcode_1": "MMR013",
+            "District": "Yangon (East)",
+            "dt_pcode_1": "MMR013D002",
+            "Township": "Pazundaung",
+            "ts_pcode_1": "MMR013016",
+            "ZawGyiOne": "???????????",
+            "Myanmar3": "???????????",
+            "KPP": null,
+            "CPP": null,
+            "CNP": null,
+            "UDPKS": null,
+            "TPNP": null,
+            "NUP": null,
+            "PNO": null,
+            "PSDP": null,
+            "AMRDP": null,
+            "RNDP": null,
+            "SNDP": null,
+            "WDP": null,
+            "NDF": "NDF",
+            "Inn": null,
+            "Danu": null,
+            "NNDP": null,
+            "USDP": null,
+            "NLD": null,
+            "Summary": "NDF"
         },"geometry": {
             "type": "Polygon",
             "coordinates": [

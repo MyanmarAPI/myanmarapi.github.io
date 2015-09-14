@@ -49,3 +49,14 @@ body{
 {
     color: #707070;
 }
+.note {
+    padding: 10px 0 10px 20px;
+    border-left: 4px solid #ff5722;
+    margin-left: 16px;
+    background-color: #f9f9f9;
+    font-size: 1.3em;
+}
+.note code {
+    font-style: italic;
+    font-weight: 600;
+}
