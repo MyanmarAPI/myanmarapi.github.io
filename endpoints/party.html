@@ -125,13 +125,17 @@
         api_version: 1,
         unicode: true,
         format: "unicode",
-        page:1,
+        current_page:2,
         per_page:20
+        links:{
+            "next":"?token=400d885d-320a-5d56-bbf9-08d992aee2cc&page=3&per_page=20",  
+            "previous":"?token=400d885d-320a-5d56-bbf9-08d992aee2cc&page=1&per_page=20"        
+        },
+        total_pages:4
     },
     data: [
             {
-                "_id": "55f30c905bf730cf188b4567",
-                "party_number": 1,
+                "id": 1,
                 "party_name": "မြိုတိုင်းရင်းသားဖွံ့ဖြိုး​ရေးပါတီ",
                 "party_name_english": "Mro National Development Party",
                 "abbreviation": "MNDP",
@@ -163,8 +167,7 @@
                 "updated_at": 1441991824236
             },
             {
-                "_id": "55f30c905bf730cf188b4568",
-                "party_number": 2,
+                "id": 2,
                 "party_name": "တိုင်းရင်းသားစည်းလုံးညီညွတ်ရေးပါတီ",
                 "party_name_english": "National Unity Party",
                 "abbreviation": "",
@@ -240,7 +243,7 @@
                             </p>
 
                             <div class="request-link">
-                                http://api.maepaysoh.org/party/detail/55f30c905bf730cf188b4567?token=user-token-key
+                                http://api.maepaysoh.org/party/[id]?token=[user-token-key]
                             </div> <!-- end of request-link -->
 
                             <div class="response">
@@ -266,11 +269,12 @@
         "unicode": true,
         "format": "unicode",
         "per_page":1,
-        "page":1
+        "current_page":1
+        "links":null,
+        "total_pages":1
     },
     "data": {
-        "_id": "55f30c905bf730cf188b4567",
-        "party_number": 1,
+        "id": 1,
         "party_name": "မြိုတိုင်းရင်းသားဖွံ့ဖြိုး​ရေးပါတီ",
         "party_name_english": "Mro National Development Party",
         "abbreviation": "MNDP",
