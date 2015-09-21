@@ -382,7 +382,7 @@
                                                 <span class="mdl-color-text--blue-500" id="cand-list-constituency-st-pcode">
                                                     constituency_st_pcode
                                                 </span>
-                                                <div class="mdl-tooltip" for="cand-list-party">
+                                                <div class="mdl-tooltip" for="cand-list-constituency-st-pcode">
                                                     optional
                                                 </div>
                                             </td>
@@ -397,7 +397,7 @@
                                                 <span class="mdl-color-text--blue-500" id="cand-list-constituency-dt-pcode">
                                                     constituency_dt_pcode
                                                 </span>
-                                                <div class="mdl-tooltip" for="cand-list-party">
+                                                <div class="mdl-tooltip" for="cand-list-constituency-dt-pcode">
                                                     optional
                                                 </div>
                                             </td>
@@ -412,7 +412,7 @@
                                                 <span class="mdl-color-text--blue-500" id="cand-list-constituency-dt-pcode">
                                                     constituency_ts_pcode
                                                 </span>
-                                                <div class="mdl-tooltip" for="cand-list-party">
+                                                <div class="mdl-tooltip" for="cand-list-constituency-dt-pcode">
                                                     optional
                                                 </div>
                                             </td>
@@ -427,7 +427,7 @@
                                                 <span class="mdl-color-text--blue-500" id="cand-list-constituency-am-pcode">
                                                     constituency_am_pcode
                                                 </span>
-                                                <div class="mdl-tooltip" for="cand-list-party">
+                                                <div class="mdl-tooltip" for="cand-list-constituency-am-pcode">
                                                     optional
                                                 </div>
                                             </td>
@@ -435,6 +435,36 @@
                                                 MMR001HLA001
                                             </td>
                                             <td class="param-desc">Get list of items filtered by constituency AM_PCODE (Amyotha Hluttaw Pcode). This value will be only present in Upper House Candidates. </td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-list-constituency-name">
+                                                    constituency_name
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-constituency-name">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                ကချင်
+                                            </td>
+                                            <td class="param-desc">Get list of items filtered by constituency name </td>
+                                            <td class="param-attr">String</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="param-name mdl-typography--text-right">
+                                                <span class="mdl-color-text--blue-500" id="cand-list-constituency-number">
+                                                    constituency_number
+                                                </span>
+                                                <div class="mdl-tooltip" for="cand-list-constituency-number">
+                                                    optional
+                                                </div>
+                                            </td>
+                                            <td class="param-value">
+                                                1
+                                            </td>
+                                            <td class="param-desc">Get list of items filtered by constituency number. Please use it along with constituency_name or constituency_ts_pcode.</td>  
                                             <td class="param-attr">String</td>
                                         </tr>
                                     </tbody>
@@ -753,7 +783,8 @@
             "links": {
                 next: "http://example.com/link/to?page=2"
             }
-        }
+        },
+        "data_version": 1
     }
 }
                                             </code>
