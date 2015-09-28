@@ -13,6 +13,32 @@ body{
     color: #707070;
 }
 
+.doc-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #f0f2f1;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto','Helvetica','Arial',sans-serif;
+}
+.doc-links li {
+    display: list-item;
+    padding: 5px 0;
+}
+.doc-links li a {
+    text-decoration: none;
+}
+.doc-links li a:before {
+    content: "# ";
+    margin-right: .25em;
+    color: rgb(255,64,129);
+    opacity: .3;
+}
+
 /* Request parameter */
 .params, .params table{
     width: 100%;
