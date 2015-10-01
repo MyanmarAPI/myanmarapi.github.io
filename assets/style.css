@@ -86,3 +86,17 @@ body{
     font-style: italic;
     font-weight: 600;
 }
+.has-code code {
+    font-style: italic;
+    background: #efefef;
+    color: #1263D0;
+    padding: 0 6px;
+}
+.p-note {
+    border-left: 2px solid #ff5722;
+    margin-left: 16px;
+    margin-top: 5px;
+    padding: 5px;
+    display: block;
+    background: #f9f9f9;
+}
